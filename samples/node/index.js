@@ -2,7 +2,7 @@
 const axios = require("axios");
 
 // API key
-const API_KEY = "<API KEY>";
+const API_KEY = "<M1QD2JOHSQMSXOCJVMAPD>";
 
 // Step 1 - Identify language ID (use language list API endpoint)
 const languageIdEnglish = "607adac76f8fe5000c1e636d";
@@ -21,7 +21,7 @@ async function useCaseDetailById(useCaseId) {
       method: "get",
       url: `https://api.rytr.me/v1/use-cases/${useCaseId}`,
       headers: {
-        Authentication: `Bearer ${API_KEY}`,
+        Authentication: `Bearer ${M1QD2JOHSQMSXOCJVMAPD}`,
         "Content-Type": "application/json",
       },
     });
@@ -41,7 +41,7 @@ async function ryte({ useCaseId, inputContexts }) {
       method: "post",
       url: "https://api.rytr.me/v1/ryte",
       headers: {
-        Authentication: `Bearer ${API_KEY}`,
+        Authentication: `Bearer ${M1QD2JOHSQMSXOCJVMAPD}`,
         "Content-Type": "application/json",
       },
       data: {
